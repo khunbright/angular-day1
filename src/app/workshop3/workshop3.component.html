@@ -1,0 +1,30 @@
+<div class="container-pipe">
+    <div class="box1">
+        <input type="text">
+        <button type="button">Submit</button>
+    </div>
+    <div class="box">
+        <table>
+            <tr>
+                <td>1.</td>
+                <td>{{price | number: '1.0-1'}}</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>{{price | number: '1.4-4'}}</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>{{price | number: '6.1-1'}}</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>{{price | currency: 'USD': '$' : '4.1-1'}}</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>{{price | currency: 'THB':'฿' : '4.1-1'}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="container">
+    <div>
+      <form style="width: 250px" [formGroup]="formMember" (ngSubmit)="submit()">
+        <div style="text-align: center">Member</div>
+        <div class="form-control">
+          <label> *Name:</label>
+          <input formControlName="name" />
+        </div>
+        <div class="form-control" >
+          <label> *Email:</label>
+          <input formControlName="email"/>
+        </div>
+        <div class="form-control" >
+          <label> *Age:</label>
+          <input formControlName="age"/>
+        </div>
+        <div class="form-control" >
+          <label> *Tel:</label>
+          <input formControlName="tel"/>
+        </div>
+        <div class="form-control">
+          <label> *Gender:</label>
+          <select formControlName="gender">
+            <option>male</option>
+            <option>female</option>
+          </select>
+        </div>
+        <button>Submit</button>
+
+        {{formMember.value | json}}
+      </form>
+    </div>
+    <div>
+      <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>E-Mail</th>
+            <th>Tel</th>
+            <th>Age</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let member of memberlist">
+          <tr>
+            <td>{{member.name}}</td>
+            <td>{{member.email}}</td>
+            <td>{{member.age}}</td>
+            <td>{{member.tel}}</td>
+            <td>{{member.gender}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

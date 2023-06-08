@@ -1,0 +1,112 @@
+.container {
+
+    color: gray;
+
+    border: 1px solid gray;
+
+    margin: 30px;
+
+    padding: 20px;
+
+    border-radius: 1rem;
+
+    display: flex;
+
+    gap: 2rem;
+
+}
+
+
+
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+
+
+
+.form-control {
+
+    display: flex;
+
+    gap: 0.5rem;
+
+}
+
+
+
+
+.form-control label {
+
+    width: 80px;
+
+}
+
+
+
+
+table {
+
+    border-collapse: collapse;
+
+}
+
+
+
+
+table th {
+
+    background-color: darkgray;
+
+    color: white;
+
+}
+
+
+
+
+table th,
+
+table td {
+
+    border: 1px solid gray;
+
+    padding: 10px 20px;
+
+}
+
+/* You can add global styles to this file, ... by Makara Atipatipat
+Makara Atipatipat
+5:25 PM
+
+/* You can add global styles to this file, and also import other style files */
+
+*,
+
+::after,
+
+::before {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+body {
+
+    color: white;
+
+}
